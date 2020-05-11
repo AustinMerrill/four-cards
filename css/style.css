@@ -1,0 +1,167 @@
+
+* {
+    box-sizing: border-box
+}
+
+main {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    /* width: 297px; */
+    height: 33px;
+    font-size: 24px;
+    color: #4d4f62;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: 200;
+ /* padding: 20px; */
+    /* border: 3px solid green */
+
+}
+.secondary-title, .card-title {
+    /* width: 295px; */
+    height: 33px;
+    font-size: 24px;
+    color: #4d4f62;
+    text-align: center;
+}
+.paragraph {
+    text-align: center;
+    /* width: 311px; */
+    color: #4d4f62;
+    opacity: .5;
+}
+
+.cards-container {
+ margin: auto;
+}
+.card-container {
+    width: 311px;
+    height: 222px;
+    box-shadow: 0 15px 30px -11px #83A6D2;
+    border-radius: 8px;
+    padding: 27px;
+    position: relative;
+    margin-bottom: 25px;
+    /* margin-left: 25px; */
+}
+.card-image {
+    position: absolute;
+    bottom: 28px;
+    right: 28px;
+}
+.one-card {
+    border-top: #44d3d2 5px solid;
+}
+.two-card {
+    border-top: #ea5454 5px solid;
+}
+.third-card {
+    border-top: #fcae4a 5px solid;
+}
+.fourth-card {
+    border-top: #549ef2 5px solid;
+}
+
+@media (min-width: 600px) {
+    
+.cards-container {
+    border: 1px solid green;
+    display: grid;
+    grid-template-columns: repeat(2 1fr);
+    grid-template-areas: "a b "
+    "c d ";
+    grid-gap: 27px;
+}
+
+    .one-card {
+    grid-area: a;
+    }
+    .two-card {
+    grid-area: b;
+    }
+    .third-card { 
+    grid-area: c;
+    }
+    .fourth-card {
+    grid-area: d;
+    }
+}
+@media (min-width: 1200px){
+    main {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .cards-container {
+        border: 1px solid rebeccapurple;
+        grid-template-columns: repeat(6 1fr);
+        grid-template-areas: '. . a a . .'
+                             'b b a a c c'
+                             'b b d d c c'
+                             '. . d d . .';
+        grid-gap: 27px;
+        width: 90vw;
+    }
+        .cards-container {
+            width: 100%;
+            
+        }
+
+        .one-card {
+        grid-area: a;
+        }
+        .two-card {
+        grid-area: b;
+        }
+        .third-card { 
+        grid-area: c;
+        }
+        .fourth-card {
+        grid-area: d;
+        
+        }
+}
+/* .one-card {
+    color: #4d4f62;
+     font-size: 20px;
+}
+p {
+    font-size: 13px;
+}
+header{
+    background-color: yellow;
+    text-align: center;
+    width: 311px;
+    padding: 40px 122px;
+    
+}   
+main {
+    background-color:white;
+}
+
+.one-card {
+    color: black;
+    border-top: #44d3d2 3px solid;
+    margin: 0;
+    text-align: center;
+    
+}
+.two-card {
+color: green;
+border-top: #ea5454 3px solid;
+
+}
+.third-card {
+    color: orange;
+    border-top: #fcae4a 3px solid;
+}
+.fourth-card {
+    color: purple;
+    border-top: #549ef2 3px solid;
+} */
